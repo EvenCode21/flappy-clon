@@ -25,7 +25,7 @@ namespace Flappy
 
         //background and ground textures
         Texture2D background;
-        Texture2D ground;
+        public static Texture2D ground;
         public static Texture2D pipeTexture;
 
         private float backgroundScroll = 0;
@@ -38,11 +38,8 @@ namespace Flappy
         private const int GROUND_SCROLL_SPEED = 60;
 
         public static bool scrolling = true;
-
-        Bird bird;
-        List<PipePairs> pipePairs = new List<PipePairs>();
-
-        float counter;
+        ScreenManager screenManager;
+        
         public Flappy()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -54,8 +51,8 @@ namespace Flappy
 
         protected override void Initialize()
         {
-            bird = new Bird();
-            bird.Initialize();
+            screenManager = new ScreenManager();
+            screenManager.Initialize();
             base.Initialize();
         }
 
@@ -65,7 +62,7 @@ namespace Flappy
             pipeTexture = Content.Load<Texture2D>("pipeDown");
             background = Content.Load<Texture2D>("background-day");
             ground = Content.Load<Texture2D>("base");
-            bird.LoadContent(Content);
+            screenManager.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -98,40 +95,18 @@ namespace Flappy
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            if(gameState == GameStates.Play)
+            screenManager.Update(gameTime);
+
+            if(gameState == GameStates.Title)
             {
-                counter += (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-
-                bird.Update(gameTime);
-
-                if (counter > 2.5f)
-                {
-                    pipePairs.Add(new PipePairs());
-                    counter = 0;
-                }
-
-                for (int i = 0; i < pipePairs.Count; i++)
-                {
-                    PipePairs pipes = pipePairs[i];
-                    pipes.Update(gameTime);
-
-                    foreach(var pip in pipes.pipes.Values)
-                    {
-                        if (bird.Collides(pip))
-                        {
-                            //collides
-                        }
-                    }
-
-                    if (pipes.pipes["bottom"].Position.X < -pipes.pipes["bottom"].Texture.Width)
-                    {
-                        pipePairs.Remove(pipes);
-                    }
-                }
+                backgroundScroll = 0;
+                background2Scroll = SCREEN_WIDTH;
+                groundScroll = 0;
+                ground2Scroll = SCREEN_WIDTH;
             }
-            
+
             base.Update(gameTime);
+            
         }
 
         protected override void Draw(GameTime gameTime)
@@ -143,18 +118,16 @@ namespace Flappy
             _spriteBatch.Draw(background, new Vector2(backgroundScroll,0), Color.White);
             _spriteBatch.Draw(background, new Vector2(background2Scroll, 0), Color.White);
 
-            foreach(var pipes in pipePairs)
-            {
-                pipes.Draw(_spriteBatch);
-            }
+            screenManager.Draw(_spriteBatch);
 
             _spriteBatch.Draw(ground, new Vector2(groundScroll,SCREEN_HEIGHT - ground.Height), Color.White);
             _spriteBatch.Draw(ground, new Vector2(ground2Scroll, SCREEN_HEIGHT - ground.Height), Color.White);
-            bird.Draw(_spriteBatch);
 
             _spriteBatch.End();
             
             base.Draw(gameTime);
         }
+
+        
     }
 }

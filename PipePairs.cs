@@ -7,11 +7,12 @@ namespace Flappy
 {
     class PipePairs
     {
-        private float GAP = 440;
+        private float GAP = 450;
         Random random = new Random();
-
+        public bool scored = false;
         public Dictionary<string, Pipe> pipes = new Dictionary<string, Pipe>();
-
+        public float posX;
+        public float width;
         public PipePairs()
         {
             pipes.Add("bottom", new Pipe("bottom", random.Next(Flappy.SCREEN_HEIGHT / 3, Flappy.SCREEN_HEIGHT - 180)));
@@ -24,6 +25,8 @@ namespace Flappy
             {
                 pipe.Update(gameTime);
             }
+            posX = pipes["bottom"].Position.X;
+            width = pipes["bottom"].Texture.Width;
         }
 
         public void Draw(SpriteBatch spriteBatch)
