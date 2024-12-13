@@ -1,0 +1,24 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/pc/source/repos/Flappy/Content/background-day.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/background-day.xnb","TextureProcessor","Texture2DContent",7026,589909,0,1986023
+"C:/Users/pc/source/repos/Flappy/Content/base.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/base.xnb","TextureProcessor","Texture2DContent",470,150613,0,0073886
+"C:/Users/pc/source/repos/Flappy/Content/gameover.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/gameover.xnb","TextureProcessor","Texture2DContent",758,32341,0,0087287
+"C:/Users/pc/source/repos/Flappy/Content/message.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/message.xnb","TextureProcessor","Texture2DContent",1602,196597,0,0127215
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/0.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/0.xnb","TextureProcessor","Texture2DContent",339,3541,0,0087393
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/1.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/1.xnb","TextureProcessor","Texture2DContent",336,2389,0,005928
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/2.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/2.xnb","TextureProcessor","Texture2DContent",345,3541,0,0041032
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/3.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/3.xnb","TextureProcessor","Texture2DContent",339,3541,0,0088635
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/4.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/4.xnb","TextureProcessor","Texture2DContent",346,3541,0,0032631
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/5.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/5.xnb","TextureProcessor","Texture2DContent",345,3541,0,0032656
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/6.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/6.xnb","TextureProcessor","Texture2DContent",344,3541,0,011623
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/7.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/7.xnb","TextureProcessor","Texture2DContent",345,3541,0,0036612
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/8.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/8.xnb","TextureProcessor","Texture2DContent",338,3541,0,019543
+"C:/Users/pc/source/repos/Flappy/Content/Numbers/9.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Numbers/9.xnb","TextureProcessor","Texture2DContent",343,3541,0,0162347
+"C:/Users/pc/source/repos/Flappy/Content/pipeDown.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/pipeDown.xnb","TextureProcessor","Texture2DContent",2590,66645,0,0093631
+"C:/Users/pc/source/repos/Flappy/Content/Sound/die.wav","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Sound/die.xnb","SoundEffectProcessor","SoundEffectContent",194894,194921,0,2852437
+"C:/Users/pc/source/repos/Flappy/Content/Sound/hit.wav","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Sound/hit.xnb","SoundEffectProcessor","SoundEffectContent",96590,96617,0,2242341
+"C:/Users/pc/source/repos/Flappy/Content/Sound/point.wav","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Sound/point.xnb","SoundEffectProcessor","SoundEffectContent",177486,177513,0,2836372
+"C:/Users/pc/source/repos/Flappy/Content/Sound/swoosh.wav","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Sound/swoosh.xnb","SoundEffectProcessor","SoundEffectContent",354638,354665,0,2994739
+"C:/Users/pc/source/repos/Flappy/Content/Sound/wing.wav","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/Sound/wing.xnb","SoundEffectProcessor","SoundEffectContent",29902,29929,0,2818185
+"C:/Users/pc/source/repos/Flappy/Content/yellowbird-downflap.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/yellowbird-downflap.xnb","TextureProcessor","Texture2DContent",426,3349,0,0087684
+"C:/Users/pc/source/repos/Flappy/Content/yellowbird-midflap.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/yellowbird-midflap.xnb","TextureProcessor","Texture2DContent",425,3349,0,0162617
+"C:/Users/pc/source/repos/Flappy/Content/yellowbird-upflap.png","C:/Users/pc/source/repos/Flappy/Content/bin/Windows/yellowbird-upflap.xnb","TextureProcessor","Texture2DContent",427,3349,0,0285683
